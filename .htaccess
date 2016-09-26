@@ -1,0 +1,19 @@
+<Files xmlrpc.php>
+order deny,allow
+deny from all
+allow from ::1
+allow from ::1
+</Files>
+# END GOTMLS Patch to Block XMLRPC Access
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /beans_uikit/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /beans_uikit/index.php [L]
+</IfModule>
+
+# END WordPress
