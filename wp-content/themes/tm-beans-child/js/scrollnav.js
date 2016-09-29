@@ -1,26 +1,30 @@
+/* My Scripts */
+
+
+/* Sticky Header */
+
 /*jQuery(document).ready(function($) {
 
-$(window).scroll(function() {
+ $(window).scroll(function() {
 
-if($(this).scrollTop() > 55 && $(this).scrollTop() < 600 ) {
+ if($(this).scrollTop() > 55 && $(this).scrollTop() < 600 ) {
 
-    $('.tm-header').addClass('hide-sticky');
-}
-else if ($(this).scrollTop() > 600){  
+ $('.tm-header').addClass('hide-sticky');
+ }
+ else if ($(this).scrollTop() > 600){
 
-    $('.tm-header').addClass('sticky');
-     $('.cust_slideshow').addClass('slider-topper');
-  }
-  
-  else{
-    $('.tm-header').removeClass('sticky');
-    $('.tm-header').removeClass('hide-sticky');
-    $('.cust_slideshow').removeClass('slider-topper');
-  }
-});
+ $('.tm-header').addClass('sticky');
+ $('.cust_slideshow').addClass('slider-topper');
+ }
 
-});*/
+ else{
+ $('.tm-header').removeClass('sticky');
+ $('.tm-header').removeClass('hide-sticky');
+ $('.cust_slideshow').removeClass('slider-topper');
+ }
+ });
 
+ });*/
 
 
 
