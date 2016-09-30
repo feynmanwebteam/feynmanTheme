@@ -1,6 +1,6 @@
 /*
-Theme Name: Beans child for OpKit Theme
-Description: Starter Child Theme for the OpKit site.
+Theme Name: Child for Feynman Theme
+Description: Starter Child Theme for the Feynman Theme
 Author: Beans, Nate Johnson
 Author URI: http://www.getbeans.io
 Template: tm-beans
@@ -64,9 +64,13 @@ h1 {
 	font-family: 'Fira Sans', sans-serif;
 }
 
-
-.contact-box .button-wrapper {
+.contact-box .f-button-wrapper {
 	padding-top:20px;
+}
+
+
+.contact-box .f-button-wrapper, .intro-box-2 .f-button-wrapper {
+	margin: 40px 0px;
 }
 
 .page .contact-buttons:hover {
@@ -112,6 +116,16 @@ h1 {
     	-webkit-text-stroke: 0px;
 }
 
+.f-page-subtitles {
+	font-family: 'Fira Sans', sans-serif;
+	font-size:22px;
+	padding: 20px 0px;
+	color:#000000;
+
+}
+
+
+
 .overlay {
 	width: 100%; 
 	height: 100%;
@@ -136,12 +150,8 @@ h1 {
         margin-top: 0px;
 }
 
-.pricing-container {
-	background-color:#3081B7;
-}
-
 .developer-title {
-	font-size: 62px; 
+	font-size: 52px; 
 	color: white;
 	line-height: 62px;
 }
@@ -164,7 +174,7 @@ h1 {
 .inner h1, .inner h2, .inner button {
 	color: white; 
 	text-align:center;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .inner {text-align: center; width: 100%; top:150px;}
@@ -180,7 +190,7 @@ h1 {
 
 
 .bottom-content-wrapper {
-	background-color:#1B1D1F;
+	background-color:#163450;
 	margin: 0px;
 	padding: 120px 20px;
 	color: white;
@@ -239,10 +249,6 @@ body .uk-navbar-nav>li.uk-active>a {
 /* Homepage Features */
 
 
-.homepage-video li {
-	height:900px;
-}
-
 .certified-background {
 	background-color: #F4F4F4;
     	margin-top: 120px;
@@ -279,8 +285,9 @@ body .uk-navbar-nav>li.uk-active>a {
 
 }
 
-.parallaxbox .video-buttons {
-	margin-top: 40px;
+
+.video-buttons {
+	list-style-type:none;
 }
 
 .parallax-text {
@@ -307,12 +314,12 @@ body .uk-navbar-nav>li.uk-active>a {
 }
 
 .about-header, .social-header {
-	background-image: url('http://localhost:8080/beans_uikit/wp-content/uploads/2016/07/eugene-website-design-development-woman-springfield-oregon.jpg') !important; background-repeat: no-repeat;
+	background-image: url('http://localhost:8080/beans_uikit/wp-content/uploads/2016/09/online-marketing-eugene-springfield-oregon-social-media.png') !important; background-repeat: no-repeat;
 
 }
 
 .blog-header {
-	background-image: url('http://localhost:8080/beans_uikit/wp-content/uploads/2016/07/eugene-website-design-development-woman-springfield-oregon.jpg') !important; background-repeat: no-repeat;
+	background-image: url('http://localhost:8080/beans_uikit/wp-content/uploads/2016/09/eugene-website-design-development-springfield-oregon-blog.png') !important; background-repeat: no-repeat;
 
 }
 
@@ -330,15 +337,31 @@ body p, .tm-main p {
 	opacity:1;
 }
 
-.pages-wrapper .contact-header {
-	background-image: url('http://localhost:8080/beans_uikit/wp-content/uploads/2016/07/wordpress-design-development-eugene-springfield-oregon.jpg'); 
+.pages-wrapper .pages-header {
+	background-image: url('http://localhost:8080/beans_uikit//wp-content/uploads/2016/08/home-background.jpg'); 
 	background-repeat: no-repeat;
+}
+
+.pages-wrapper .contact-header, .pages-wrapper .mobile-header {
+	background-image: url('http://localhost:8080/beans_uikit/wp-content/uploads/2016/09/eugene-seo-search-engine-optimization-springfield-oregon-development.png'); 
+	background-repeat: no-repeat;
+	/*background-position: center center !important;*/
 	
 }
 
+.pages-wrapper .cms-header {
+	background-image: url('http://localhost:8080/beans_uikit/wp-content/uploads/2016/09/wordpress-development-eugene-springfield-oregon.png'); 
+	background-repeat: no-repeat;
+}
+
+
+.pages-header .uk-overlay-background {
+	background: rgba(0,0,0,0);
+}
+
 .contact-container .update-title, .contact-container .contact-title {
-	font-size: 28px;
-	font-family: 'PT Sans', sans-serif;
+	font-size: 26px;
+	font-family: 'Fira Sans', sans-serif;
 	line-height: 52px;
 	padding: 40px 0px 0px 0px;
 }
@@ -347,7 +370,7 @@ body p, .tm-main p {
         font-size: 18px;
         font-family: 'PT Sans', sans-serif !important;
 	text-align: center;
-	padding: 0px 40px;
+	padding: 40px;
 }
 
 .page-intro p {
@@ -380,11 +403,6 @@ body p, .tm-main p {
 
 .grid-title h4 {
 	margin-top: 20px;
-}
-
-.services-rows .grid-title:hover {
-	background-color:#3081B7;
-	color: white;
 }
 
 .grid-title:hover h4 a{
@@ -428,11 +446,15 @@ body p, .tm-main p {
 	font-weight: bold;
 }
 
+
+.ad-row {
+	height:300px !important;
+}
+
 .ad-row .start-sub {
 	color:#FFFFFF;
 	font-size:62px;
 	text-align:left;
-	font-weight: bold;
 	padding: 120px 0px 40px 0px;
 }
 
@@ -468,6 +490,7 @@ body p, .tm-main p {
 .description-content li {
 	font-size: 16px;
     	line-height: 32px;
+	min-height: 96px;
 }
 
 .description-border {
@@ -545,7 +568,7 @@ body p, .tm-main p {
 }
 
 #wpss_contact_submit:hover {
-	background-color:#0170BA;
+	background-color:#3081B7;
 	transition: background-color 0.5s ease;
 }
 
@@ -554,11 +577,11 @@ body p, .tm-main p {
 	transition: background-color 0.5s ease;
 	border-radius: 5px;
 	margin-top: 100px;
-	width: 200px;
+	width: 150px;
 	background-color:#3081B7;
 	color: white;
 	font-size: 16px;
-	padding: 10px 25px !important; 
+	padding: 5px 20px !important; 
 	border: 0px !important;
 }
 
@@ -586,22 +609,22 @@ body .services-rows a:hover {
 	text-align: center !important;
         font-family: 'PT Sans', sans-serif;
 	font-size: 26px;
-	color:#0170BA !important;
+	color:#3081B7!important;
 	
 }
 
 
 
 
-.pages-wrapper .pages-title {
-	font-size: 40px;
+.pages-wrapper .pages-title, .ad-row .pages-title {
+	font-size: 62px;
 	color: white;
 	margin: 0px;
-	text-transform: uppercase;
+	font-weight: 500;
 	padding: 30px 0px;
 	text-align: center;
 	margin-top: 75px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 }
 
 .update-title {
@@ -625,7 +648,7 @@ body .services-rows a:hover {
    	 border-top-right-radius: 50%;
     	 border-bottom-right-radius: 50%;
     	 border-bottom-left-radius: 50%;
-    	 box-shadow: 0 0 0 2px #0170BA inset;
+    	 box-shadow: 0 0 0 2px #3081B7 inset;
 }
 
 .uk-icon-map-marker:hover, .uk-icon-envelope-o:hover, .uk-icon-mobile:hover {
@@ -655,7 +678,7 @@ body .services-rows a:hover {
 
 
 .uk-subnav > * > * {
-	color:#0170BA;
+	color:#3081B7;
 }
 
 .contacts-item {
@@ -673,11 +696,11 @@ body .services-rows a:hover {
 }
 
 .tm-main a {
-	color:#0170BA;
+	color:#3081B7;
 }
 
 .tm-main.uk-link {
-	color:#0170BA !important;
+	color:#3081B7!important;
 }
 
 .tm-primary .tm-content {
@@ -700,7 +723,7 @@ body .services-rows a:hover {
 
 .highlight-small-blue {
 	 margin-left: 355px;
-	background: -webkit-gradient(radial, 10% 10%, 0, 10% 10%, 600, from(#FFFFFF), to(#3081B7)) !important;
+	background: -webkit-gradient(radial, 10% 10%, 0, 10% 10%, 600, from(#FFFFFF), to(#163450)) !important;
 }	
 
 .pages-rows .contact-highlight {
@@ -735,10 +758,9 @@ body a:hover {
 }
 
 .intro-title {
-	font-size:  36px;
+	font-size:  32px;
 	line-height: 55px;
 	text-align: center;
-	font-weight: 200;
 	font-family: 'Fira Sans', sans-serif;
 }
 
@@ -756,13 +778,13 @@ body a:hover {
 }
 
 .uk-icon-globe, .uk-icon-search-plus, .uk-icon-flash, .uk-icon-user-plus {
-	color:#0170BA;
+	color:#3081B7;
 }
 
 
 .uk-icon-star {
 	padding:5px;
-	color:#01759B;
+	color:#3081B7;
 }
 
 .sub-title {
@@ -786,9 +808,9 @@ body a:hover {
 }
 
 .title-new {
-	padding:40px 20px;
-	width:1200px;
+	padding:80px 20px 20px 20px;
 	margin: 0 auto !important;
+        color:#303133;
 }
 
 .custom-title .uk-article-meta {
@@ -820,12 +842,12 @@ body a:hover {
 	padding-top:20px !important;
 }
 
-.page a {
+.page a, .contacts-item a, .contacts-item .contacts-item-value{
 	transition: color 0.5s ease;
 	color: #3081B7;
 }
 
-.page a:hover {
+.page a:hover, .contacts-item a:hover {
 	transition: color 0.5s ease;
 }
 
@@ -879,7 +901,7 @@ body a:hover {
 
 .portfolio-rows .custom-panel h2 {
 	transition: background-color 0.5s ease;
-	background-color:#0170BA;
+	background-color:#3081B7;
 	color: white;
 }
 
@@ -907,7 +929,7 @@ body a:hover {
     	width: 80px;
     	margin: -60px auto 0 auto;
     	border-radius: 5px;
-    	background: #0170BA;
+    	background: #3081B7;
     	line-height: 80px;
 	top:-36px;
     	color: #fff;
@@ -945,17 +967,13 @@ body a:hover {
 
 .steps-container h2 span {
 	font-size: 32px;
-	color: #0170BA;
+	color: #3081B7;
 }
 
 .steps-container {
 	border: 1px solid #ddd;
         border-radius: 4px;
 	padding: 20px;
-}
-
- .fullwidth-rows .steps-container {
-	margin: 0px;
 }
 
 
@@ -969,7 +987,7 @@ body a:hover {
 }
 
 .steps-container-3 {
-	background-color: #0170BA;
+	background-color: #3081B7;
         border: 0px;
 }
 
@@ -982,9 +1000,83 @@ body a:hover {
 	width: 60%;
 }
 
-.fullwidth-container .uk-container {
-	width: 100%;
+
+
+
+
+/* Footer Styles */ 
+
+
+.tm-site .bottom-footer a {	
+	color:#3081B7;
+	font-size: 11px;
 }
+
+
+.bottom-footer {
+	font-size: 11px;
+	color:white;
+	background: url('http://localhost:8888/Feynmantheme//wp-content/uploads/2016/03/wordpress-bottom-image.png') repeat-x scroll 50% -28px transparent;
+	background-color: #163450;
+	padding: 15px 10px 0px 10px;
+}
+
+
+.tm-site .tm-footer {
+	background-image: radial-gradient(circle farthest-side at center bottom, #3575B9, #3081B7);
+	font-family: 'Fira Sans', sans-serif;
+	padding-top:20px;
+	
+}
+
+.tm-footer .grid-rows {
+	margin-bottom: 0px !important;
+}
+
+.footer-titles {
+	color: white;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 26px;
+}
+
+.tm-footer li a {
+	color: white !important;
+}
+
+#menu-seomenu, #menu-networkmenu-1, #menu-footermenu-1, #menu-networkmenu, #menu-footermenu   {
+	color: white;
+    	list-style-type: disc;
+	
+}
+
+#menu-seomenu > li > a, #menu-footermenu-1 > li > a, #menu-networkmenu-1 > li > a, #menu-networkmenu > li > a, #menu-footermenu > li > a {
+	color: white !important;
+	font-size: 15px;
+	line-height: 28px;
+	padding: 10px 0px;
+}
+
+.tm-footer .uk-text-muted {
+	color:white !important;
+}
+
+.textwidget .f-widget-title {
+	color:#afcee9;
+	font-size: 18px;
+}
+
+.textwidget .f-contact-list li {
+	color:#fff;
+}
+
+.tm-footer .textwidget .f-contact-list li {
+	list-style-type:none;
+	line-height:32px;
+}
+
+.textwidget .f-contact-list {
+	padding-left:0px !important;
+}	
 
 .menu-footersocial-container {
 	margin:0px;
@@ -992,7 +1084,6 @@ body a:hover {
 }
 
  #menu-footersocial {
-	margin-top: -3px;
 	list-style-type:none !important;
 }
 
@@ -1000,6 +1091,11 @@ body a:hover {
 	display:inline !important;
 	padding: 0px 5px;
 }
+
+
+
+
+
 
 .uk-navbar-nav .nav-social > a, .uk-navbar-nav .social-first > a {
 	border: 0px !important;
@@ -1052,7 +1148,7 @@ body a:hover {
 	padding: 0px;
 	max-width: 100% !important;
 	margin: 0px !important;
-	background-color:#1A1A1A;
+	background-color:#163450;
 	color:white;
 }
 
@@ -1072,7 +1168,7 @@ body a:hover {
 }
 
 .call-title a:hover {
-	color: #0170BA !important;
+	color: #3081B7!important;
 }
 
 
@@ -1082,7 +1178,7 @@ body a:hover {
 }	
 
 .cust_slideshow, .uk-slideshow {
-	height:500px !important;
+	height:500px;
 	padding:0px !important;
 	max-width: none !important;
 }
@@ -1288,13 +1384,13 @@ body .bottom-slideshow > .uk-active {
 }
 
 .slide-button {
-	background-color: #0170BA;
+	background-color: #3081B7;
 	transition: background-color 0.5s ease;
 }
 
 
 .slide-button:hover {
-	background-color: #0170BA !important;
+	background-color: #3081B7 !important;
 	transition: background-color 0.5s ease;
 }
 
@@ -1304,7 +1400,7 @@ body .bottom-slideshow > .uk-active {
 	width: 300px;
 	padding: 15px 20px 10px 20px !important;
 	font-size: 28px !important;
-	background-color:#0170BA;
+	background-color:#3081B7;
 	font-family: 'PT Sans', sans-serif;
 }
 
@@ -1325,44 +1421,11 @@ body .bottom-slideshow > .uk-active {
 	text-align: center;
 }
 
+.info-container {
+	padding: 80px 50px !important;
+}	
 
 
-.tm-site .tm-footer {
-	background-image: radial-gradient(circle farthest-side at center bottom, #3575B9, #3081B7);
-	font-family: 'Fira Sans', sans-serif;
-	
-}
-
-.tm-footer .grid-rows {
-	margin-bottom: 0px !important;
-}
-
-.footer-titles {
-	color: white;
-	font-family: 'PT Sans', sans-serif;
-	font-size: 26px;
-}
-
-.tm-footer li a {
-	color: white !important;
-}
-
-#menu-seomenu, #menu-networkmenu-1, #menu-footermenu-1, #menu-networkmenu, #menu-footermenu   {
-	color: white;
-    	list-style-type: disc;
-	
-}
-
-#menu-seomenu > li > a, #menu-footermenu-1 > li > a, #menu-networkmenu-1 > li > a, #menu-networkmenu > li > a, #menu-footermenu > li > a {
-	color: white !important;
-	font-size: 15px;
-	line-height: 28px;
-	padding: 10px 0px;
-}
-
-.tm-footer .uk-text-muted {
-	color:white !important;
-}
 
 
 .parallax-section {
@@ -1401,45 +1464,10 @@ body .bottom-slideshow > .uk-active {
 	margin: 40px 0px !important;
 }
 
-.tm-site .bottom-footer a {	
-	color:#3081B7;
-	font-size: 11px;
-}
 
 
-.bottom-footer {
-	font-size: 11px;
-	color:white;
-	background: url(http://localhost:8888/operator/wp-content/uploads/2016/03/wordpress-bottom-image.png) repeat-x scroll 50% -28px transparent;
-	background-color: #163450;
-	padding: 15px 10px 15px 10px;
-}
 
-.top{
-	background-color: #F5AB35;
-	bottom: 2em;
-	color: #fff;
-	display: none;
-	opacity:0.6;
-	padding: 1.5em;
-	position: fixed;
-	right: 1.5em;
-	text-decoration: none;
-}
-.top:hover{
-	opacity:1;
-	transition:1s;
-}
 
-.scroll-back-to-top-wrapper {
-	background-color: transparent !important;
-}
-
-.fa-caret-up:before {
-
-content: "\f062" !important;
-
-}
 
 
 
@@ -1448,7 +1476,7 @@ content: "\f062" !important;
 /* Parallax Test */
 
 
-.textbox {
+.f-textbox {
     position: relative;
     height: auto;
     
@@ -1470,7 +1498,20 @@ content: "\f062" !important;
     background-position: center center;
 }
 
+.f-quote-wrap {
+	margin-top:400px;
+	text-align:center;
+}
 
+.f-feynman-quote {
+	font-style:italic;
+}
+
+.f-quote-wrap h3 {
+	text-align:center;
+	font-size:26px;
+	line-height: 36px;
+}
 
 .title-separator {
 	border: 1.5px solid #3081B7;
@@ -1485,8 +1526,8 @@ content: "\f062" !important;
 }
 
 #pb2 {
-	height: 600px;
-	background-image: url('http://localhost:8080/beans_uikit/wp-content/uploads/2016/09/Feynman-hd-image.jpg');
+	height: 800px;
+	background-image: url('http://localhost:8080/beans_uikit/wp-content/uploads/2016/09/Feynman-group-eugene-hd-image-dark.png');
 }
 
 #pb3 {
@@ -1497,7 +1538,8 @@ content: "\f062" !important;
 .intro-box-1 {
 	background-image: url('http://localhost:8080/beans_uikit/wp-content/uploads/2016/08/trees-background-option-2.jpg');
 	background-repeat: no-repeat;
-	padding: 60px 0px;
+	padding: 120px 0px;
+	background-size:cover;
 }
 
 .intro-box-1 .bottom-row {
@@ -1544,7 +1586,8 @@ content: "\f062" !important;
 
 .intro-box-2 .page-intro {
 	height: 200px;
-	margin: 60px 0px 0px 0px;
+	padding-bottom:40px;
+	margin:0px;
 }
 
 
@@ -1579,6 +1622,83 @@ content: "\f062" !important;
 .display-bottom {
 	display:none;
 }
+
+
+
+/* Homepage Video Slider */
+
+.f-developer-wrapper {
+	position:absolute;
+	z-index:1;
+	width:100%;
+	margin-top: 120px;
+}
+
+.f-video-container {
+	overflow:hidden;
+}
+
+
+.homepage-video li {
+	height:750px;
+}
+
+
+.homepage-video {
+	background-color:#3081B7;
+	z-index: 0;
+}
+
+.parallaxbox .video-buttons {
+	margin-top: 40px;
+}
+
+ .video-buttons  a {
+	color:white;
+}
+
+
+
+.services-rows .grid-title:hover {
+	background-color:#3081B7;
+	color: white;
+}
+
+.services-rows {
+	margin-top: 40px;
+}
+
+
+
+
+
+
+/* Fullwidth Page Template */
+
+
+.fullwidth-container .uk-container {
+	width: 100%;
+}
+
+
+ .fullwidth-rows .steps-container {
+	margin: 0px;
+}
+
+.f-fullwidth-main {
+	background-color: #ffffff;
+	padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -10,16 +10,20 @@ get_header();
 <div class="uk-container">
 <div class="uk-panel-box">
 <div class="portfolio-rows" data-uk-grid>
-<div class="portfolio-intro">
 
-<h2 class="tagline" style="text-align: center;"><strong>Web Solutions for Businesses </strong> <a href="http://localhost:8888/operator/contact/"><strong>in Eugene & Springfield</strong>
-</a></h2>
+    <?php
 
-<p> We all know how frustrating technology can be at times. That's why at Operator Web Solutions, we take care of all the heavy lifting while gently guiding you through the development process. Using engaging design patterns and leveraging the latest software, we can offer fast and effective services tailored to meet your needs of your business. </p>
+    /* Get Page Content */
 
-</div>
+    //begin loop
+    if (have_posts()) : while (have_posts()) : the_post();?>
+    <?php the_content(); ?>
+    <?php endwhile; endif; ?>
 
-<?php
+
+    <?php
+
+
 /* Retrieve Client Projects */
 
 $args = array( 'post_type' => 'clients', 'posts_per_page' => 10 );
