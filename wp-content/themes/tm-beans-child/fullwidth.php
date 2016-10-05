@@ -1,6 +1,8 @@
 <?php 
 
-/* Template Name: Full Width */ 
+/* Template Name: Full Width */
+
+if ( ! defined( 'ABSPATH') ) exit; // Exit if accessed directly
 
 get_header();
 

@@ -2,6 +2,7 @@
 
 /* Primary Homepage template */
 
+if ( ! defined( 'ABSPATH') ) exit; // Exit if accessed directly
 
 
 add_action( 'beans_fixed_wrap[_header]_after_markup', 'beans_child_custom_home' );

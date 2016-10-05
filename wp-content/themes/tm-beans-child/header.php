@@ -10,6 +10,8 @@
  * @link   http://www.getbeans.io
  */
 
+if ( ! defined( 'ABSPATH') ) exit; // Exit if accessed directly
+
 // Template situated in /lib/templates/structure/header.php
 beans_load_default_template(__File__);
 

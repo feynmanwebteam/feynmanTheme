@@ -1,6 +1,9 @@
 <?php 
 
-/* Template Name: Custom Blog */ 
+/* Template Name: Custom Blog */
+
+if ( ! defined( 'ABSPATH') ) exit; // Exit if accessed directly
+
 get_header();
 
 do_action( 'beans_before_loop' );

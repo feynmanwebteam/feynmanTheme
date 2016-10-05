@@ -1,6 +1,9 @@
 <?php
 
+/*  Homepage Slideshow template */
 
+
+if ( ! defined( 'ABSPATH') ) exit; // Exit if accessed directly
 
 if(is_page('home-slideshow')) {
 

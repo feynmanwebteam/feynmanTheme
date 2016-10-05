@@ -1,6 +1,8 @@
 <?php 
 
-/* Template Name: Client Portfolio */ 
+/* Template Name: Client Portfolio */
+
+if ( ! defined( 'ABSPATH') ) exit; // Exit if accessed directly
 
 get_header();
 
