@@ -73,6 +73,24 @@ h1 {
 	margin: 40px 0px;
 }
 
+.f-slide-video-button {
+	margin-top:80px;
+}
+
+.f-developer-wrapper .f-slide-video-button:hover {
+	background-color:white;
+	color:#163450;
+	border: 2px solid #163450 !important;
+	-webkit-transition: color 500ms ease-out 0.2s;
+   	-moz-transition: color 500ms ease-out 0.2s;
+   	-o-transition: color 500ms ease-out 0.2s;
+   	transition: color 500ms ease-out 0.2s;
+	-webkit-transition: background-color 500ms ease-out 0.2s;
+   	-moz-transition: background-color 500ms ease-out 0.2s;
+   	-o-transition: background-color 500ms ease-out 0.2s;
+   	transition: background-color 500ms ease-out 0.2s;
+}
+
 .page .contact-buttons:hover {
 	background-color:white;
 	color:black;
@@ -86,7 +104,7 @@ h1 {
    	transition: background-color 500ms ease-out 0.2s;
 }
 
-.page .contact-buttons {
+.page .contact-buttons, .f-slide-video-button  {
 	-webkit-transition: color 500ms ease-out 0.2s;
    	-moz-transition: color 500ms ease-out 0.2s;
    	-o-transition: color 500ms ease-out 0.2s;
@@ -150,10 +168,12 @@ h1 {
         margin-top: 0px;
 }
 
-.developer-title {
-	font-size: 52px; 
+.f-developer-title {
+	font-size: 72px;
+	line-height: 80px; 
 	color: white;
-	line-height: 62px;
+	text-transform:uppercase;
+	font-weight:bold;
 }
 
 .testimonial-bottom {
@@ -1634,6 +1654,10 @@ body .bottom-slideshow > .uk-active {
 	z-index:1;
 	width:100%;
 	margin-top: 120px;
+}
+
+.f-developer-wrapper .video-buttons {
+	margin-top: 80px;
 }
 
 .f-video-container {
